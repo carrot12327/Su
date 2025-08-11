@@ -16,5 +16,5 @@
 
     <color name="button_surface">#262626</color>
     <color name="button_stroke">#333333</color>
-    <color name="ripple_color">#26FFFFFF</color>
+    <color name="ripple_color">#26FFA500</color>
 </resources>
