@@ -23,6 +23,7 @@
         <item name="android:background">@drawable/launcher_menu_button_background</item>
         <item name="android:textColor">@color/primary_text</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:stateListAnimator">@animator/press_elevation</item>
     </style>
 
     <style name="LauncherMenuButton.Universal" parent="LauncherMenuButton">

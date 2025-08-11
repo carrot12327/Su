@@ -64,6 +64,20 @@ public class MainMenuFragment extends Fragment {
 
         mOpenDirectoryButton.setOnClickListener((v)-> openPath(v.getContext(), getCurrentProfileDirectory(), false));
 
+        // Staggered entrance animations
+        View header = view.findViewById(R.id.brand_row);
+        View[] items = new View[] {
+                header,
+                mCustomControlButton, mInstallJarButton, mShareLogsButton, mOpenDirectoryButton
+        };
+        for (int i = 0; i < items.length; i++) {
+            View item = items[i];
+            if (item == null) continue;
+            item.setAlpha(0f);
+            item.setTranslationY(getResources().getDisplayMetrics().density * 16);
+            int delay = 60 * i;
+            item.animate().alpha(1f).translationY(0f).setStartDelay(delay).setDuration(220).start();
+        }
 
         mNewsButton.setOnLongClickListener((v)->{
             Tools.swapFragment(requireActivity(), GamepadMapperFragment.class, GamepadMapperFragment.TAG, null);
