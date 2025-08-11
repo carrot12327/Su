@@ -105,7 +105,8 @@ android {
             resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
         }
         proguard {
-            initWith debug
+            initWith release
+            debuggable false
             minifyEnabled true
             shrinkResources true
         }
