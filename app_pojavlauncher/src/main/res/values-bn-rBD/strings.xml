@@ -277,7 +277,7 @@
     <string name="storage_required">Ziayzu Launcher চালানোর জন্য এক্সটার্নাল স্টোরেজ সংযুক্ত করতে হবে। পুনরায় সংযুক্ত করে অ্যাপ রিস্টার্ট করুন।</string>
     <string name="mcl_setting_title_buttonallcaps">বোতামের লেবেলে কেবল বড় হাতের অক্ষর ব্যবহার করুন</string>
     <string name="mcl_setting_subtitle_buttonallcaps">ছোট হাতের অক্ষর ব্যবহার করতে এটি বন্ধ করুন।</string>
-    <string name="create_instance">নতুন ইনস্ট্যান্স তৈরি করুন</string>
+    <string name="create_instance">Create</string>
     <string name="preference_shader_dump_title">শেডার ডাম্পিং চালু করুন</string>
     <string name="preference_shader_dump_description">লগ ফাইলে কনভার্ট করা শেডার সংরক্ষণ করুন।</string>
     <string name="percent_format">%d%%</string>

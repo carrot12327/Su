@@ -274,7 +274,7 @@
     <string name="storage_required">मोजो लॉन्चर को बाहरी स्टोरेज अटैच होना ज़रूरी है। कृपया इसे फिर से कनेक्ट करें और ऐप रीस्टार्ट करें।</string>
     <string name="mcl_setting_title_buttonallcaps">बटन लेबल में केवल बड़े अक्षरों का उपयोग करें</string>
     <string name="mcl_setting_subtitle_buttonallcaps">यदि आप अपने कंट्रोल्स में छोटे अक्षरों का उपयोग करना चाहते हैं तो इसे डिसेबल करें।</string>
-    <string name="create_instance">नया इंस्टेंस बनाएँ</string>
+    <string name="create_instance">Create</string>
     <string name="preference_shader_dump_title">शेडर डंपिंग सक्षम करें</string>
     <string name="preference_shader_dump_description">कन्वर्टेड शेडर्स को लॉग फ़ाइल में लॉग करें।</string>
     <string name="percent_format">%d%%</string>
