@@ -45,7 +45,6 @@
                 android:text="@string/app_short_name"
                 android:enabled="false"
                 android:drawableStart="@mipmap/ic_launcher"
-                android:drawableEnd="@drawable/ic_discord"
                 android:layout_marginHorizontal="@dimen/padding_large"
                 android:layout_marginTop="@dimen/padding_large"
                 app:layout_constraintTop_toTopOf="parent" />
