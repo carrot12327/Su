@@ -3,7 +3,7 @@
     <color name="control_button_color">#4CC4C4C4</color>
     <color name="control_button_pressed_color">#4D000000</color>
 
-    <color name="minebutton_color">#FFA500</color>
+    <color name="minebutton_color">#FF5722</color>
     <color name="background_app">#181818</color>
     <color name="divider">@color/background_overlay</color>
     <color name="background_overlay">#464646</color>
@@ -16,5 +16,5 @@
 
     <color name="button_surface">#262626</color>
     <color name="button_stroke">#333333</color>
-    <color name="ripple_color">#26FFA500</color>
+    <color name="ripple_color">#26FF5722</color>
 </resources>
