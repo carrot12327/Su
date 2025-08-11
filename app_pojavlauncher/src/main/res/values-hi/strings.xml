@@ -437,6 +437,6 @@
     <string name="oauth_web_complete">प्रमाणीकरण हो रहा है…</string>
     <string name="auth_select_microsoft">माइक्रोसॉफ्ट अकाउंट</string>
     <string name="auth_select_elyby">Ely.by अकाउंट</string>
-    <string name="auth_select_local">स्थानीय अकाउंट</string>
+    <string name="auth_select_local">Offline account</string>
     <string name="instance_dir_missing">इंस्टेंस गायब है</string>
 </resources>
