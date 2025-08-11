@@ -279,7 +279,7 @@
     Downloading mods (%112f MB / %212f MB)
     Downloading mods (File %1 out of %2)
     Applying overrides (%1/%2)
-    <string name="modpack_install_notification_title">Mojo Modpack Installer really gud</string>
+    <string name="modpack_install_notification_title">Ziayzu Modpack Installer really gud</string>
     <string name="modpack_install_notification_success">Click here to finish modpack installation</string>
     <string name="modpack_install_notification_data_not_available">Failed to download mod loader information please stay like a sigma 😎😎</string>
     <string name="modpack_install_modloader_download_failed">Failed to download the mod loader files</string>
