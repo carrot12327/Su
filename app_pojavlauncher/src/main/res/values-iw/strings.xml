@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition for Android)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher (Minecraft: Java Edition for Android)</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">בחר מתקין mod</string>
     <!-- Error messages -->
-    <string name="error_fatal">MojoLauncher קרס באופן בלתי צפוי</string>
+    <string name="error_fatal">Ziayzu Launcher קרס באופן בלתי צפוי</string>
     <string name="error_no_version">אין גרסה!</string>
     <string name="error_show_more">הצג עוד</string>
     <string name="error_show_less">הצג פחות</string>
@@ -29,7 +29,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">מנקה קבצי מטמון</string>
     <string name="mcl_launch_downloading">מוריד %s</string>
-    <string name="mcl_launch_downloading_progress">"מתקין %s (%.2f MB / %.2f MB)"</string>
+    "Downloading %1 (%212f MB / %312f MB)"
     <string name="mcl_launch_download_assets">מתכונן להורדת משאבים</string>
     <string name="mcl_options">אפשרויות</string>
     <string name="mcl_option_customcontrol">פקדים מותאמים אישית</string>
@@ -136,7 +136,7 @@
     <string name="customctrl_passthru">עכבר עובר דרך</string>
     <string name="customctrl_swipeable">ניתן להחלקה</string>
     <string name="customctrl_forward_lock">נעילת קדימה</string>
-    <string name="memory_warning_msg">הכמות הנוכחית של RAM פנוי (%d) נמוכה מכמות ה-RAM שהוקצתה (%d), מה שעלול לגרום למשחק לקרוס. הנך מתבקש לשנות את ההקצאה במידה והמשחק קורס.</string>
+    The current amount of free RAM (%1) is lower than allocated RAM (%2), which may lead to crashes. Change the allocation if the game crashes.
     <string name="mcl_memory_allocation">הקצאת זיכרון</string>
     <string name="mcl_memory_allocation_subtitle">שולט בכמה זיכרון ניתן ל מיינקראפט.</string>
     <string name="multirt_runtime_corrupt">Java Runtime פגומה</string>
@@ -217,7 +217,7 @@
     <string name="preference_gyro_sample_rate_title">קצב דגימת חיישן הכיוון</string>
     <string name="preference_gyro_sample_rate_description">אם אתם חווים בעיות ביצועים עם בקרי חיישן הכיוון, הגדילו ערך זה.</string>
     <string name="microsoft_login_retry_later">יותר מדי בקשות, נסו שוב מאוחר יותר.</string>
-    <string name="storage_required">MojoLauncher דורש אחסון חיצוני מחובר. אנא חבר אותו מחדש והפעל מחדש את האפליקציה.</string>
+    <string name="storage_required">Ziayzu Launcher דורש אחסון חיצוני מחובר. אנא חבר אותו מחדש והפעל מחדש את האפליקציה.</string>
     <string name="mcl_setting_title_buttonallcaps">השתמש באותיות גדולות בלבד בתוויות הכפתורים.</string>
     <string name="mcl_setting_subtitle_buttonallcaps">השבת אפשרות זו אם ברצונך להשתמש באותיות קטנות בבקרים שלך.</string>
     <string name="create_profile">צור פרופיל חדש</string>

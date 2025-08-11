@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition para Android)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher (Minecraft: Java Edition para Android)</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Seleciona um Instalador de mods</string>
     <!-- Error messages -->
-    <string name="error_fatal">O MojoLauncher falhou inesperadamente</string>
+    <string name="error_fatal">O Ziayzu Launcher falhou inesperadamente</string>
     <string name="error_no_version">Não existem versões!</string>
     <string name="error_show_more">Mostrar mais</string>
     <string name="error_show_less">Mostrar menos</string>
@@ -29,7 +29,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">A limpar os ficheiros em cache</string>
     <string name="mcl_launch_downloading">A transferir %s</string>
-    <string name="mcl_launch_downloading_progress">"A transferir %s (%.2f MB / %.2f MB)"</string>
+    "Downloading %1 (%212f MB / %312f MB)"
     <string name="mcl_launch_download_assets">A preparar para transferir os recursos</string>
     <string name="mcl_options">Opções</string>
     <string name="mcl_option_customcontrol">Controlos personalizados</string>
@@ -143,7 +143,7 @@
     <string name="customctrl_swipeable">Deslizável</string>
     <string name="customctrl_forward_lock">Bloqueio da Frente</string>
     <string name="customctrl_absolute_tracking">Rastreamento absoluto do dedo</string>
-    <string name="memory_warning_msg">A quantidade atual de memória RAM livre (%d) é menor do que a memória RAM alocada (%d), o que pode levar a falhas. Altera a alocação se o jogo falhar.</string>
+    The current amount of free RAM (%1) is lower than allocated RAM (%2), which may lead to crashes. Change the allocation if the game crashes.
     <string name="mcl_memory_allocation">Alocação de memória</string>
     <string name="mcl_memory_allocation_subtitle">Controla quanta memória é delegada ao Minecraft.</string>
     <string name="multirt_runtime_corrupt">Runtime do Java corrompida</string>

@@ -26,7 +26,7 @@
 				app:layout_constraintGuide_percent="0.5"/>
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/news_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="0dp"
 				android:text="@string/mcl_tab_wiki"
 				android:drawableStart="@drawable/ic_px_book"
@@ -43,7 +43,7 @@
 				app:layout_constraintBottom_toBottomOf="@id/news_button"/>
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/discord_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="0dp"
 				android:text="@string/mcl_button_discord"
 				android:drawableStart="@drawable/ic_discord"
@@ -54,7 +54,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/custom_control_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_gamepad"
 				android:text="@string/mcl_option_customcontrol"
@@ -62,7 +62,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/install_jar_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_java_run"
 				android:text="@string/main_install_jar_file"
@@ -70,7 +70,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/share_logs_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_sharelog"
 				android:text="@string/main_share_logs"
@@ -78,7 +78,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/open_files_button"
-				style="@style/LauncherMenuButton.Universal"
+				style="@style/LauncherMenuButton.Professional"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_folder"
 				android:text="@string/mcl_button_open_directory"

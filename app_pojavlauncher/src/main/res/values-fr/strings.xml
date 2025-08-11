@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition pour Android)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher (Minecraft: Java Edition pour Android)</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -15,7 +15,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Sélectionnez un installateur de mods</string>
     <!-- Error messages -->
-    <string name="error_fatal">MojoLauncher a cessé de fonctionner de façon inattendue</string>
+    <string name="error_fatal">Ziayzu Launcher a cessé de fonctionner de façon inattendue</string>
     <string name="error_no_version">Aucune version !</string>
     <string name="error_show_more">Afficher plus</string>
     <string name="error_show_less">Afficher moins</string>
@@ -31,7 +31,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">Nettoyage des fichiers cache</string>
     <string name="mcl_launch_downloading">Téléchargement de %s</string>
-    <string name="mcl_launch_downloading_progress">"Téléchargement de %s (%.2f Mo / %.2f Mo)"</string>
+    "Downloading %1 (%212f MB / %312f MB)"
     <string name="mcl_launch_download_assets">Préparation du téléchargement des ressources</string>
     <string name="mcl_options">Options</string>
     <string name="mcl_option_customcontrol">Contrôles personnalisés</string>
@@ -147,8 +147,8 @@
     <string name="customctrl_swipeable">Balayable</string>
     <string name="customctrl_forward_lock">Verrouillage vers l\'avant</string>
     <string name="customctrl_absolute_tracking">Suivi absolu du doigt</string>
-    <string name="memory_warning_msg">La quantité actuelle de RAM libre (%d) est inférieure à la RAM allouée (%d), ce qui peut entraîner des plantages. Changez l\'allocation si le jeu plante.</string>
-    <string name="address_memory_warning_msg">La quantité actuelle d\'espace RAM allouable libre (%d) est inférieure à la RAM allouée (%d), ce qui entraînera des crashs. Modifiez l\'allocation de la RAM si le jeu crash.</string>
+    The current amount of free RAM (%1) is lower than allocated RAM (%2), which may lead to crashes. Change the allocation if the game crashes.
+    The current amount of free addressable RAM space (%1) is lower than the allocated RAM (%2), which will lead to crashes. Change the allocation if the game crashes.
     <string name="mcl_memory_allocation">Allocation de mémoire</string>
     <string name="mcl_memory_allocation_subtitle">Contrôle la quantité de mémoire donnée à Minecraft.</string>
     <string name="multirt_runtime_corrupt">Java Runtime corrompu</string>
@@ -236,7 +236,7 @@
     <string name="preference_gyro_sample_rate_title">Taux d\'échantillonnage du gyroscope</string>
     <string name="preference_gyro_sample_rate_description">Si vous avez des problèmes de performance avec les commandes du gyroscope, augmentez cette valeur.</string>
     <string name="microsoft_login_retry_later">Trop de requêtes, s\'il vous plaît réessayez plus tard.</string>
-    <string name="storage_required">MojoLauncher nécessite que le stockage externe soit connecté. Veuillez le reconnecter et redémarrer l\'application.</string>
+    <string name="storage_required">Ziayzu Launcher nécessite que le stockage externe soit connecté. Veuillez le reconnecter et redémarrer l\'application.</string>
     <string name="mcl_setting_title_buttonallcaps">N\'utilisez que des lettres majuscules dans les libellés des boutons</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Désactivez cette option si vous souhaitez utiliser des lettres minuscules dans vos contrôles.</string>
     <string name="create_profile">Créer un nouveau profil</string>
@@ -284,10 +284,10 @@
     <string name="search_modpack_no_result">Aucun modpack trouvé</string>
     <string name="search_modpack_error">Échec de la recherche des modpacks</string>
     <string name="search_modpack_download_error">Échec du téléchargement des métadonnées du modpack</string>
-    <string name="modpack_download_downloading_metadata">Téléchargement des métadonnées du modpack (%.2f Mo / %.2f Mo)</string>
-    <string name="modpack_download_downloading_mods">Téléchargement des mods (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods_fc">Téléchargement des mods (Fichier %d sur %d)</string>
-    <string name="modpack_download_applying_overrides">Application des remplacements (%d/%d)</string>
+    Downloading modpack metadata (%112f MB / %212f MB)
+    Downloading mods (%112f MB / %212f MB)
+    Downloading mods (File %1 out of %2)
+    Applying overrides (%1/%2)
     <string name="modpack_install_notification_title">Installeur Mojo de Modpack</string>
     <string name="modpack_install_notification_success">Cliquez ici pour terminer l\'installation du modpack</string>
     <string name="modpack_install_notification_data_not_available">Échec du téléchargement de l\'information du chargeur de mod</string>
@@ -317,7 +317,7 @@
     <string name="preference_category_miscellaneous">Paramètres divers</string>
     <string name="preference_category_video">Paramètres vidéo</string>
     <string name="notification_permission_dialog_title">Demande de permission</string>
-    <string name="notification_permission_dialog_text">MojoLauncher a besoin d\'une autorisation pour afficher des notifications afin d\'éviter que les téléchargements de jeux/modpacks ne s\'arrêtent lorsque vous quittez l\'application. Sans cette autorisation, Android peut interrompre vos téléchargements lorsque vous mettez MojoLauncher en mode arrière-plan.</string>
+    <string name="notification_permission_dialog_text">Ziayzu Launcher a besoin d\'une autorisation pour afficher des notifications afin d\'éviter que les téléchargements de jeux/modpacks ne s\'arrêtent lorsque vous quittez l\'application. Sans cette autorisation, Android peut interrompre vos téléchargements lorsque vous mettez Ziayzu Launcher en mode arrière-plan.</string>
     <string name="notification_permission_toast">Vous pouvez toujours changer d\'avis plus tard en allant dans Paramètres</string>
     <string name="preference_ask_for_notification_title">Autoriser les notifications</string>
     <string name="preference_ask_for_notification_description">Cliquez sur ce bouton pour redemander l\'autorisation de notification, nécessaire au bon fonctionnement des téléchargements en arrière-plan des jeux/modpacks.</string>
@@ -326,8 +326,8 @@
     <string name="exception_failed_to_unpack_jre17">L\'installation de JRE 17 a échoué</string>
     <string name="newdl_starting">Lecture des métadonnées du jeu …</string>
     <string name="newdl_downloading_metadata">Téléchargement des métadonnées du jeu (%s)</string>
-    <string name="newdl_downloading_game_files">Téléchargement du jeu en cours… (%d/%d, %.2f MB/s)</string>
-    <string name="newdl_downloading_game_files_size">Téléchargement du jeu en cours… (%.2f/%.2f MB, %.2f MB/s)</string>
+    Downloading game… (%1/%2, %312f MB/.2f MB/.2f MB/s)
+    Downloading game… (%112f/%212f MB, %312f MB/s)
     <string name="cropper_title">Sélectionnez une version de Forge</string>
     <string name="cropper_lock_vertical">Verrouillage vertical</string>
     <string name="cropper_lock_horizontal">Verrouillage horizontal</string>

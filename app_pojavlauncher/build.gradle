@@ -48,7 +48,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.mojo'
+    namespace 'com.ziayzu.launcher'
 
     compileSdk = 35
 
@@ -72,7 +72,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mojo"
+        applicationId "com.ziayzu.launcher"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode getDateSeconds()
@@ -101,11 +101,12 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.mojo.debug'
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher.debug'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder.debug'
         }
         proguard {
-            initWith debug
+            initWith release
+            debuggable false
             minifyEnabled true
             shrinkResources true
         }
@@ -121,8 +122,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.mojo'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher'
         }
         gplay {
             initWith release
@@ -162,6 +163,14 @@ android {
     }
 
     buildToolsVersion = '34.0.0'
+}
+
+// Ensure JavaCompile tasks use JDK 8 toolchain to avoid JDK 21 deprecation warnings
+afterEvaluate {
+    def jdk8 = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(8) }
+    tasks.withType(org.gradle.api.tasks.compile.JavaCompile).configureEach { t ->
+        t.javaCompiler.set(jdk8)
+    }
 }
 
 class AssetTaskRegistrar {
@@ -272,7 +281,8 @@ class AssetTaskRegistrar {
     }
 
     def jreRuntimeDependency(int version, String relPath) {
-        def jreUrl = "https://github.com/MojoLauncher/android-openjdk-build-multiarch/releases/download/rolling/jre%d-pojav.zip"
+        def jreOrg = System.getenv("JRE_ORG") ?: "MojoLauncher"
+        def jreUrl = "https://github.com/${jreOrg}/android-openjdk-build-multiarch/releases/download/rolling/jre%d-pojav.zip"
         onlineZipDependency(String.format(jreUrl, version), "ComponentRuntime$version", relPath)
     }
 }
@@ -293,7 +303,8 @@ afterEvaluate {
             registrar.jreRuntimeDependency 21, "components/jre-21"
         }
         
-		def cacioJarUrl = "https://jitpack.io/com/github/MojoLauncher/%1\$s/%2\$s/master-SNAPSHOT/%2\$s-master-SNAPSHOT.jar"
+		def cacioOrg = System.getenv("CACIO_ORG") ?: "MojoLauncher"
+		def cacioJarUrl = "https://jitpack.io/com/github/${cacioOrg}/%1\$s/%2\$s/master-SNAPSHOT/%2\$s-master-SNAPSHOT.jar"
 
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-shared", "components/caciocavallo"
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-androidnw", "components/caciocavallo"
@@ -314,6 +325,7 @@ dependencies {
     implementation 'androidx.annotation:annotation:1.5.0'
 
     implementation "androidx.constraintlayout:constraintlayout:2.1.4"
+    implementation 'com.google.android.material:material:1.12.0'
 
     implementation 'com.github.duanhong169:checkerboarddrawable:1.0.2'
     implementation 'com.github.PojavLauncherTeam:portrait-sdp:ed33e89cbc'

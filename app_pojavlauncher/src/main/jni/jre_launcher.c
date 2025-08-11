@@ -116,7 +116,7 @@ static void abort_waiter_setup() {
         if(sigaction(tracked_signals[i], &sigactions[i], NULL) != 0) {
             // Not returning here because we may have set some handlers successfully.
             // Some handling is better than no handling.
-            printf("Failed to set signal hander for signal %i: %s", i, strerror(errno));
+            printf("Failed to set signal hander for signal %zu: %s", i, strerror(errno));
         }
     }
 }

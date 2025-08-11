@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition Androidile)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher (Minecraft: Java Edition Androidile)</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -96,7 +96,7 @@
     <string name="mcl_setting_title_mousespeed">Kursori kiirus</string>
     <string name="customctrl_passthru">Kursori läbivus</string>
     <string name="customctrl_swipeable">Viibatav</string>
-    <string name="memory_warning_msg">Hetkel saadaolev muutmälu (%d) on madalam kui eraldatud muutmälu (%d), mis võib krahhe põhjustada. Kui mäng jookseb kokku, muuda mälueraldust.</string>
+    The current amount of free RAM (%1) is lower than allocated RAM (%2), which may lead to crashes. Change the allocation if the game crashes.
     <string name="mcl_memory_allocation">Mälueraldus</string>
     <string name="multirt_config_title">Java Runtime\'id</string>
     <string name="multirt_config_add">Lisa uus</string>

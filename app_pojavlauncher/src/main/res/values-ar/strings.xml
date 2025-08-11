@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition for Android)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher (Minecraft: Java Edition for Android)</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -15,7 +15,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">حدد مشغل مودات لتثبيته</string>
     <!-- Error messages -->
-    <string name="error_fatal">لقد توقف MojoLauncher بشكل غير متوقع</string>
+    <string name="error_fatal">لقد توقف Ziayzu Launcher بشكل غير متوقع</string>
     <string name="error_no_version">لا يوجد إصدار!</string>
     <string name="error_show_more">اظهر المزيد</string>
     <string name="error_show_less">أظهِر أقل</string>
@@ -31,7 +31,7 @@
     <!-- MCLauncherActivity: Strings -->
     <string name="mcl_launch_cleancache">تنظيف ملفات ذاكرة التخزين المؤقت</string>
     <string name="mcl_launch_downloading">التحميل جارٍ %s</string>
-    <string name="mcl_launch_downloading_progress">"جارٍ تنزيل %s (%.2f ميغابايت / %.2f ميغابايت)"</string>
+    "Downloading %1 (%212f MB / %312f MB)"
     <string name="mcl_launch_download_assets">جار الاستعداد لتنزيل الموارد</string>
     <string name="mcl_options">الخيارات</string>
     <string name="mcl_option_customcontrol">تخصيص التحكم</string>
@@ -147,8 +147,8 @@
     <string name="customctrl_swipeable">قابل للسحب</string>
     <string name="customctrl_forward_lock">قفل إلى الأمام</string>
     <string name="customctrl_absolute_tracking">تتبع الأصابع بشكل مطلق</string>
-    <string name="memory_warning_msg">الكَمَيَّة الحالية من ذاكرة الوصول العشوائي المتاحة للاستخدام (%d) أقل من ذاكرة الوصول العشوائي المحددة (%d)، مما قد يؤدي إلى حدوث أعطال. غير الذاكرة المخصصة إذا توقفت اللعبة.</string>
-    <string name="address_memory_warning_msg">الكَمَيَّة الحالية من ذاكرة الوصول العشوائي المتاحة للاستخدام (%d) أقل من ذاكرة الوصول العشوائي المحددة (%d)، مما قد يؤدي إلى حدوث أعطال. غير الذاكرة المخصصة إذا توقفت اللعبة.</string>
+    The current amount of free RAM (%1) is lower than allocated RAM (%2), which may lead to crashes. Change the allocation if the game crashes.
+    The current amount of free addressable RAM space (%1) is lower than the allocated RAM (%2), which will lead to crashes. Change the allocation if the game crashes.
     <string name="mcl_memory_allocation">الذاكرة المخصصة للاستخدام</string>
     <string name="mcl_memory_allocation_subtitle">يتحكم في كَمَيَّة الذاكرة المعطاة لـ Minecraft.</string>
     <string name="multirt_runtime_corrupt">بيئة تشغيل Java تالفة</string>
@@ -236,7 +236,7 @@
     <string name="preference_gyro_sample_rate_title">معدل أخذ العينات من الجايرسكوب</string>
     <string name="preference_gyro_sample_rate_description">اذا كان لديك مشاكل أداء في الجايروسكوب، زد هذا الخيار.</string>
     <string name="microsoft_login_retry_later">طلبات كثيرة جداً، الرجاء المحاولة مرة أخرى لاحقاً.</string>
-    <string name="storage_required">يتطلب MojoLauncher أن تكون وحدة التخزين الخارجية متصلة. الرجاء إعادة الاتصال بها وإعادة تشغيل التطبيق.</string>
+    <string name="storage_required">يتطلب Ziayzu Launcher أن تكون وحدة التخزين الخارجية متصلة. الرجاء إعادة الاتصال بها وإعادة تشغيل التطبيق.</string>
     <string name="mcl_setting_title_buttonallcaps">استخدم الأحرف الكبيرة فقط في اسماء الأزرار</string>
     <string name="mcl_setting_subtitle_buttonallcaps">عطل هذا اذا كنت تريد إستخدام الأحرف الصغيرة.</string>
     <string name="create_profile">إنشاء ملف شخصي جديد</string>
@@ -284,11 +284,11 @@
     <string name="search_modpack_no_result">لم يتم العثور على مودباك</string>
     <string name="search_modpack_error">فشل العثور على مودباك</string>
     <string name="search_modpack_download_error">فشل تنزيل البيانات التعريفية للمودباك</string>
-    <string name="modpack_download_downloading_metadata">تحميل اابيانات التعريفية للمودباك (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods">تحميل المودات (%.2f MB / %.2f MB)</string>
-    <string name="modpack_download_downloading_mods_fc">تحميل المودات (الملف %d من %d)</string>
-    <string name="modpack_download_applying_overrides">تطبيق التجاوزات (%d/%d)</string>
-    <string name="modpack_install_notification_title">Mojo Modpack Installerⁿ</string>
+    Downloading modpack metadata (%112f MB / %212f MB)
+    Downloading mods (%112f MB / %212f MB)
+    Downloading mods (File %1 out of %2)
+    Applying overrides (%1/%2)
+    <string name="modpack_install_notification_title">Ziayzu Modpack Installerⁿ</string>
     <string name="modpack_install_notification_success">انقر هنا لإنهاء تثبيت modpack</string>
     <string name="modpack_install_notification_data_not_available">Не удалось загрузить информацию о загрузчике модов</string>
     <string name="modpack_install_modloader_download_failed">فشل تنزيل ملفات محمل المودات</string>
@@ -314,7 +314,7 @@
     <string name="preference_category_miscellaneous">أعدادات متنوعة</string>
     <string name="preference_category_video">إعدادات الفيديو</string>
     <string name="notification_permission_dialog_title">طلب السماح</string>
-    <string name="notification_permission_dialog_text">MojoLauncher requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put MojoLauncher in background mode.</string>
+    <string name="notification_permission_dialog_text">Ziayzu Launcher requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put Ziayzu Launcher in background mode.</string>
     <string name="notification_permission_toast">O</string>
     <string name="preference_ask_for_notification_title">السماح بالإشعارات</string>
     <string name="preference_ask_for_notification_description">.</string>
@@ -323,8 +323,8 @@
     <string name="exception_failed_to_unpack_jre17">فشل تثبيت JRE 17</string>
     <string name="newdl_starting">قراءة بيانات تعريف اللعبة…</string>
     <string name="newdl_downloading_metadata">تحميل بيانات تعريف اللعبة (%s)</string>
-    <string name="newdl_downloading_game_files">جاري تحميل اللعبة… (%d/%d, %.2f MB/s)</string>
-    <string name="newdl_downloading_game_files_size">جاري تحميل اللعبة… (%.2f/%.2f MB، %.2f MB/s)</string>
+    Downloading game… (%1/%2, %312f MB/.2f MB/.2f MB/s)
+    Downloading game… (%112f/%212f MB, %312f MB/s)
     <string name="cropper_title">اختيار منطقة الصورة</string>
     <string name="cropper_lock_vertical">تأمين المحور العمودي</string>
     <string name="cropper_lock_horizontal">تأمين المحور الأفقي</string>
