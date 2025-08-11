@@ -20,7 +20,9 @@
     </style>
 
     <style name="LauncherMenuButton" parent="Widget.AppCompat.Button">
-        <item name="android:background">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@drawable/launcher_menu_button_background</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="LauncherMenuButton.Universal" parent="LauncherMenuButton">
