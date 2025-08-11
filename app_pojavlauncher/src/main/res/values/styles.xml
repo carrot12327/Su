@@ -27,6 +27,17 @@
         <item name="android:layout_height">@dimen/_66sdp</item>
     </style>
 
+    <!-- Professional look: rounded, subtle tint, ripple -->
+    <style name="LauncherMenuButton.Professional" parent="LauncherMenuButton.Universal">
+        <item name="android:backgroundTint">@color/control_button_color</item>
+        <item name="android:foreground">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:insetTop">8dp</item>
+        <item name="android:insetBottom">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:minHeight">@dimen/_56sdp</item>
+    </style>
+
     <style name="ThickDivider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/_1sdp</item>
