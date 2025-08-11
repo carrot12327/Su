@@ -314,33 +314,7 @@ afterEvaluate {
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo17", "cacio-tta", "components/caciocavallo17"
 
         // Download and apply custom launcher logo across densities
-        def variantNameCap = variant.getName().capitalize()
-        def densities = ["mdpi","hdpi","xhdpi","xxhdpi","xxxhdpi"]
-        def logoUrl = "https://drive.google.com/uc?export=download&id=19-30kvDvLUJurJFL-IVTNX7_BnVOIs3X"
-        densities.each { dens ->
-            def resDir = "src/main/res/mipmap-${dens}"
-            def deleteTask = tasks.register("deleteLauncherWebp${dens}${variantNameCap}", Delete) {
-                delete file("${resDir}/ic_launcher.webp"),
-                       file("${resDir}/ic_launcher_foreground.webp"),
-                       file("${resDir}/ic_launcher_round.webp")
-            }
-            ["ic_launcher","ic_launcher_foreground","ic_launcher_round"].each { base ->
-                def t = tasks.register("downloadLauncher_${base}_${dens}_${variantNameCap}", Download) {
-                    src logoUrl
-                    dest file("${resDir}/${base}.png")
-                    overwrite true
-                    dependsOn deleteTask
-                }
-                variant.mergeResourcesProvider.configure { dependsOn t }
-            }
-        }
-        // Also replace Play Store listing icon
-        def playStoreIconTask = tasks.register("downloadPlayStoreIcon${variantNameCap}", Download) {
-            src logoUrl
-            dest file("src/main/ic_launcher-playstore.png")
-            overwrite true
-        }
-        variant.preBuildProvider.configure { dependsOn playStoreIconTask }
+        // Removed: icons are now embedded in mipmap folders
     }
 }
 
