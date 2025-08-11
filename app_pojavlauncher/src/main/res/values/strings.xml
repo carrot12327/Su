@@ -443,4 +443,6 @@
     <string name="auth_select_elyby">Ely.by account</string>
     <string name="auth_select_local">Local account</string>
     <string name="instance_dir_missing">Instance is missing</string>
+    <string name="bind_process_waiting_joystick" formatted="false">Waiting for joystick binding…</string>
+    <string name="create_profile">Create profile</string>
 </resources>
