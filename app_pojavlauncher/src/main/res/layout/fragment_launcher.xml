@@ -138,11 +138,9 @@
 	</ScrollView>
 
 	    <com.kdt.mcgui.mcVersionSpinner
-        android:background="@drawable/version_selector_bg"
-		android:id="@+id/mc_version_spinner"
-		android:layout_width="0dp"
-		android:layout_height="@dimen/_52sdp"
-		android:background="@android:color/transparent"
+                android:id="@+id/mc_version_spinner"
+                android:layout_width="0dp"
+        android:layout_height="@dimen/_52sdp"
 		android:drawableEnd="@drawable/spinner_arrow"
 
 		app:drawableEndSize="@dimen/padding_heavy"
