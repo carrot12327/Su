@@ -301,10 +301,10 @@
     <string name="fabric_dl_game_version">Phiên bản Minecraft</string>
     <string name="fabric_dl_install">Cài đặt</string>
     <string name="fabric_dl_cant_read_meta">Không đọc được siêu dữ liệu trình %s. Vui lòng thử lại sau.</string>
-    <string name="modloader_dl_install_fabric_instance">Tạo phiên bản Fabric mới</string>
-    <string name="modloader_dl_install_quilt_instance">Tạo phiên bản Quilt mới</string>
-    <string name="modloader_dl_install_forge_instance">Tạo phiên bản Forge mới</string>
-    <string name="create_instance_vanilla">Tạo phiên bản vanilla mới</string>
+    <string name="modloader_dl_install_fabric_instance">Fabric</string>
+    <string name="modloader_dl_install_quilt_instance">Quilt</string>
+    <string name="modloader_dl_install_forge_instance">Forge</string>
+    <string name="create_instance_vanilla">Vanilla</string>
     <string name="create_profile_vanilla_like_versions">Tạo những phiên bản giống vanilla</string>
     <string name="create_profile_modded_versions">Phiên bản đã được sửa đổi</string>
     <string name="fabric_dl_loader_title">Chọn phiên bản</string>
@@ -336,7 +336,7 @@
     <string name="modpack_install_notification_data_not_available">Không thể tải thông tin trình cài đặt mod</string>
     <string name="modpack_install_modloader_download_failed">Không thể tải các tệp của trình cài đặt mod</string>
     <string name="modpack_install_download_failed">Không thể tải các tệp của modpack</string>
-    <string name="modpack_install_instance_button">Tạo thư mục modpack mới</string>
+    <string name="modpack_install_instance_button">Modpack</string>
 
     <string name="notif_error_occured">Đã xảy ra lỗi</string>
     <string name="notif_error_occured_desc">Nhấn để xem chi tiết</string>
@@ -422,7 +422,7 @@
     <string name="local_login_bad_username_title">Tên người dùng không phù hợp</string>
     <string name="local_login_bad_username_text">Tên người dùng phải có từ 3 đến 16 kí tự, và chỉ có chữ cái Latinh, chữ số và dấu gạch chân.</string>
     <string name="quick_setting_title">Cài đặt nhanh</string>
-    <string name="create_bta_instance">Tạo thư mục \"Better than Adventure!\"  </string>
+    <string name="create_bta_instance">Better than Adventure!</string>
     <string name="select_bta_version">Chọn phiên bản\"Better than Adventure!\" </string>
     <string name="bta_installer_available_versions">Những phiên bản BTA được chọn </string>
     <string name="bta_installer_untested_versions">Những phiên bản BTA chưa được thử</string>

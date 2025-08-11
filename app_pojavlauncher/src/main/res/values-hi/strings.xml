@@ -308,10 +308,10 @@
     <string name="fabric_dl_install">इंस्टॉल करें</string>
     <string name="fabric_dl_cant_read_meta">%s लोडर मेटाडेटा पढ़ने में विफल। कृपया बाद में फिर से प्रयास करें।</string>
     <string name="fabric_dl_cant_read_meta2">फैब्रिक लोडर मेटाडेटा पढ़ने में विफल। कृपया बाद में फिर से प्रयास करें।</string>
-    <string name="modloader_dl_install_fabric_instance">फैब्रिक इंस्टेंस बनाएँ</string>
-    <string name="modloader_dl_install_quilt_instance">क्विल्ट इंस्टेंस बनाएँ</string>
-    <string name="modloader_dl_install_forge_instance">फोर्ज इंस्टेंस बनाएँ</string>
-    <string name="create_instance_vanilla">वैनिला इंस्टेंस बनाएँ</string>
+    <string name="modloader_dl_install_fabric_instance">Fabric</string>
+    <string name="modloader_dl_install_quilt_instance">Quilt</string>
+    <string name="modloader_dl_install_forge_instance">Forge</string>
+    <string name="create_instance_vanilla">Vanilla</string>
     <string name="create_profile_vanilla_like_versions">वैनिला जैसी संस्करण</string>
     <string name="create_profile_modded_versions">मॉड की गई संस्करण</string>
     <string name="fabric_dl_loader_title">संस्करण चुनें</string>
@@ -343,7 +343,7 @@
     <string name="modpack_install_notification_data_not_available">मॉड लोडर जानकारी डाउनलोड करने में विफल</string>
     <string name="modpack_install_modloader_download_failed">मॉड लोडर फ़ाइलें डाउनलोड करने में विफल</string>
     <string name="modpack_install_download_failed">मॉडपैक फ़ाइलें डाउनलोड करने में विफल</string>
-    <string name="modpack_install_instance_button">मॉडपैक इंस्टेंस बनाएँ</string>
+    <string name="modpack_install_instance_button">Modpack</string>
 
     <string name="notif_error_occured">एक त्रुटि हुई है</string>
     <string name="notif_error_occured_desc">अधिक जानकारी देखने के लिए क्लिक करें</string>
@@ -426,7 +426,7 @@
     <string name="local_login_bad_username_title">अनुपयुक्त यूज़रनेम</string>
     <string name="local_login_bad_username_text">यूज़रनेम 3–16 अक्षरों का होना चाहिए, और इसमें केवल लैटिन अक्षर, 0–9 अंक और अंडरस्कोर होने चाहिए।</string>
     <string name="quick_setting_title">त्वरित सेटिंग्स</string>
-    <string name="create_bta_instance">बेटर दैन एडवेंचर!" इंस्टेंस बनाएँ!"</string>
+    <string name="create_bta_instance">Better than Adventure!</string>
     <string name="select_bta_version">बेटर दैन एडवेंचर!" संस्करण चुनें</string>
     <string name="bta_installer_available_versions">समर्थित BTA संस्करण</string>
     <string name="bta_installer_untested_versions">अपरिक्षित BTA संस्करण</string>
