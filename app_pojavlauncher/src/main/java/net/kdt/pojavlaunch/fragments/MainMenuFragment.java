@@ -37,8 +37,8 @@ public class MainMenuFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        ImageButton mNewsButton = view.findViewById(R.id.news_button);
-        ImageButton mDiscordButton = view.findViewById(R.id.discord_button);
+        View mNewsButton = view.findViewById(R.id.icon_wiki);
+        View mDiscordButton = view.findViewById(R.id.icon_discord);
         Button mCustomControlButton = view.findViewById(R.id.custom_control_button);
         Button mInstallJarButton = view.findViewById(R.id.install_jar_button);
         Button mShareLogsButton = view.findViewById(R.id.share_logs_button);

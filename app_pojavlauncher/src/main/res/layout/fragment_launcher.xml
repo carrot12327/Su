@@ -49,31 +49,41 @@
                 android:layout_marginTop="@dimen/padding_large"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/news_button" />
+                app:layout_constraintEnd_toStartOf="@id/brand_actions" />
 
-            <ImageButton
-                android:id="@+id/news_button"
-                android:layout_width="@dimen/_52sdp"
-                android:layout_height="@dimen/_52sdp"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/mcl_tab_wiki"
-                android:src="@drawable/ic_px_book"
-                app:layout_constraintTop_toTopOf="@id/brand_button"
-                app:layout_constraintBottom_toBottomOf="@id/brand_button"
-                app:layout_constraintEnd_toStartOf="@id/discord_button"
-                app:layout_constraintHorizontal_bias="1.0"/>
-
-            <ImageButton
-                android:id="@+id/discord_button"
-                android:layout_width="@dimen/_52sdp"
-                android:layout_height="@dimen/_52sdp"
-                android:background="?android:attr/selectableItemBackgroundBorderless"
-                android:contentDescription="@string/mcl_button_discord"
-                android:src="@drawable/ic_discord"
+            <LinearLayout
+                android:id="@+id/brand_actions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 app:layout_constraintTop_toTopOf="@id/brand_button"
                 app:layout_constraintBottom_toBottomOf="@id/brand_button"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/padding_large"/>
+                android:layout_marginEnd="@dimen/padding_large">
+
+                <ImageView
+                    android:id="@+id/icon_wiki"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="12dp"
+                    android:padding="4dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/mcl_tab_wiki"
+                    android:src="@drawable/ic_px_book"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <ImageView
+                    android:id="@+id/icon_discord"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:padding="4dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/mcl_button_discord"
+                    android:src="@drawable/ic_discord"
+                    android:clickable="true"
+                    android:focusable="true"/>
+            </LinearLayout>
 
             <com.kdt.mcgui.LauncherMenuButton
                 android:id="@+id/install_jar_button"
