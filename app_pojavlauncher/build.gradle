@@ -350,3 +350,65 @@ dependencies {
 
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
 }
+
+def resizeImage(File inputFile, File outputFile, int sizePx) {
+    javax.imageio.ImageIO.setUseCache(false)
+    def original = javax.imageio.ImageIO.read(inputFile)
+    if (original == null) return
+    int w = original.getWidth()
+    int h = original.getHeight()
+    int dim = Math.max(w, h)
+    // pad to square with transparent background
+    def square = new java.awt.image.BufferedImage(dim, dim, java.awt.image.BufferedImage.TYPE_INT_ARGB)
+    def g0 = square.createGraphics()
+    g0.setComposite(java.awt.AlphaComposite.Src)
+    g0.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON)
+    g0.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BICUBIC)
+    g0.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY)
+    g0.drawImage(original, (dim - w)/2 as int, (dim - h)/2 as int, null)
+    g0.dispose()
+    // scale down
+    def scaled = new java.awt.image.BufferedImage(sizePx, sizePx, java.awt.image.BufferedImage.TYPE_INT_ARGB)
+    def g = scaled.createGraphics()
+    g.setComposite(java.awt.AlphaComposite.Src)
+    g.setRenderingHint(java.awt.RenderingHints.KEY_ANTIALIASING, java.awt.RenderingHints.VALUE_ANTIALIAS_ON)
+    g.setRenderingHint(java.awt.RenderingHints.KEY_INTERPOLATION, java.awt.RenderingHints.VALUE_INTERPOLATION_BICUBIC)
+    g.setRenderingHint(java.awt.RenderingHints.KEY_RENDERING, java.awt.RenderingHints.VALUE_RENDER_QUALITY)
+    g.drawImage(square, 0, 0, sizePx, sizePx, null)
+    g.dispose()
+    outputFile.parentFile.mkdirs()
+    javax.imageio.ImageIO.write(scaled, 'png', outputFile)
+}
+
+tasks.register('resizeAllLauncherIcons') {
+    doLast {
+        def resRoot = new File(project.projectDir, 'src/main/res')
+        def densityToPx = [
+                'mdpi': 48,
+                'hdpi': 72,
+                'xhdpi': 96,
+                'xxhdpi': 144,
+                'xxxhdpi': 192,
+        ]
+        densityToPx.each { dens, px ->
+            def dir = new File(resRoot, "mipmap-${dens}")
+            ["ic_launcher", "ic_launcher_foreground", "ic_launcher_round"].each { base ->
+                def f = new File(dir, base + '.png')
+                if (f.isFile()) resizeImage(f, f, px as int)
+            }
+        }
+        // Play Store icon 512x512
+        def playStore = new File(project.projectDir, 'src/main/ic_launcher-playstore.png')
+        if (playStore.isFile()) resizeImage(playStore, playStore, 512)
+        println 'Launcher icons resized.'
+    }
+}
+
+// Optionally wire into Android build if SDK available
+afterEvaluate {
+    android.applicationVariants.configureEach { variant ->
+        try {
+            variant.mergeResourcesProvider.configure { dependsOn tasks.named('resizeAllLauncherIcons') }
+        } catch (Throwable ignored) {}
+    }
+}
