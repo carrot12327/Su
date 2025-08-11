@@ -37,29 +37,40 @@
                 android:layout_marginTop="@dimen/padding_large"
                 app:layout_constraintTop_toBottomOf="@id/brand_button" />
 
-            <com.kdt.mcgui.LauncherMenuButton
-                android:id="@+id/brand_button"
-                style="@style/LauncherMenuButton.Universal"
-                android:layout_width="0dp"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/brand_row"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/_66sdp"
-                android:text="@string/app_short_name"
-                android:enabled="false"
-                android:drawableStart="@mipmap/ic_launcher"
-                android:layout_marginStart="@dimen/padding_large"
+                android:layout_marginHorizontal="@dimen/padding_large"
                 android:layout_marginTop="@dimen/padding_large"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/brand_actions" />
+                android:background="@drawable/launcher_menu_button_background"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:id="@+id/brand_actions"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                app:layout_constraintTop_toTopOf="@id/brand_button"
-                app:layout_constraintBottom_toBottomOf="@id/brand_button"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/padding_large">
+                <ImageView
+                    android:id="@+id/brand_logo"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:contentDescription="@string/app_short_name"
+                    android:padding="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <TextView
+                    android:id="@+id/brand_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_short_name"
+                    android:textColor="@color/primary_text"
+                    android:textStyle="bold"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    app:layout_constraintStart_toEndOf="@id/brand_logo"
+                    app:layout_constraintEnd_toStartOf="@id/icon_wiki"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
 
                 <ImageView
                     android:id="@+id/icon_wiki"
@@ -71,7 +82,10 @@
                     android:contentDescription="@string/mcl_tab_wiki"
                     android:src="@drawable/ic_px_book"
                     android:clickable="true"
-                    android:focusable="true"/>
+                    android:focusable="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/icon_discord"/>
 
                 <ImageView
                     android:id="@+id/icon_discord"
@@ -82,8 +96,13 @@
                     android:contentDescription="@string/mcl_button_discord"
                     android:src="@drawable/ic_discord"
                     android:clickable="true"
-                    android:focusable="true"/>
-            </LinearLayout>
+                    android:focusable="true"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             <com.kdt.mcgui.LauncherMenuButton
                 android:id="@+id/install_jar_button"
