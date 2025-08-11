@@ -38,7 +38,8 @@
 			>
 		<androidx.constraintlayout.widget.ConstraintLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
+			android:layout_height="wrap_content"
+			android:layoutAnimation="@anim/layout_stagger">
 			<androidx.constraintlayout.widget.Guideline
 				android:id="@+id/center_guideline"
 				android:layout_width="0dp"
@@ -157,6 +158,8 @@
 
 		android:textAllCaps="true"
 		android:text="@string/main_play"
+		android:foreground="?attr/selectableItemBackgroundBorderless"
+		android:stateListAnimator="@animator/fade_in"
 		app:layout_constraintBottom_toBottomOf="parent"
 		/>
 
