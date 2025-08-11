@@ -288,7 +288,7 @@
     <string name="modpack_download_downloading_mods">تحميل المودات (%.2f MB / %.2f MB)</string>
     <string name="modpack_download_downloading_mods_fc">تحميل المودات (الملف %d من %d)</string>
     <string name="modpack_download_applying_overrides">تطبيق التجاوزات (%d/%d)</string>
-    <string name="modpack_install_notification_title">Mojo Modpack Installerⁿ</string>
+    <string name="modpack_install_notification_title">Ziayzu Modpack Installerⁿ</string>
     <string name="modpack_install_notification_success">انقر هنا لإنهاء تثبيت modpack</string>
     <string name="modpack_install_notification_data_not_available">Не удалось загрузить информацию о загрузчике модов</string>
     <string name="modpack_install_modloader_download_failed">فشل تنزيل ملفات محمل المودات</string>
