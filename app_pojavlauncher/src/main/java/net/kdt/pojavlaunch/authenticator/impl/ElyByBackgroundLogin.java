@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import com.kdt.mcgui.ProgressLayout;
 
 import net.kdt.pojavlaunch.Tools;
+import git.artdeell.mojo.BuildConfig;
 import net.kdt.pojavlaunch.authenticator.AuthType;
 import net.kdt.pojavlaunch.authenticator.BackgroundLogin;
 import net.kdt.pojavlaunch.authenticator.accounts.MinecraftAccount;
@@ -87,11 +88,10 @@ public class ElyByBackgroundLogin implements BackgroundLogin {
 
     private void acquireTokens(boolean isRefresh, String code) throws IOException {
         URL url = new URL(authTokenUrl);
-        Log.i("MicrosoftLogin", "isRefresh=" + isRefresh + ", authCode= "+code);
 
         String formData = CommonLoginUtils.convertToFormData(
                 "client_id", "mojolauncher2",
-                "client_secret", "o14Zb2Zzj0_k6o4kN0t1mIEhoQxeayn8hYi5VSX2q3NXrdQm5T2Q6wqsCfpv1vhu",
+                "client_secret", BuildConfig.ELYBY_CLIENT_SECRET,
                 "redirect_uri", "internalredirect://complete",
                 isRefresh ? "refresh_token" : "code", code,
                 "grant_type", isRefresh ? "refresh_token" : "authorization_code"

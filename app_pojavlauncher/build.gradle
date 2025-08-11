@@ -40,6 +40,17 @@ def getCFApiKey = {
     return "DUMMY"
 }
 
+def getElyByClientSecret = {
+    String secret = System.getenv("ELYBY_CLIENT_SECRET")
+    if(secret != null && !secret.isEmpty()) return secret
+    File secretFile = new File("./elyby_secret.txt")
+    if(secretFile.canRead() && secretFile.isFile()) {
+        return secretFile.text.trim()
+    }
+    logger.warn('BUILD: No Ely.by client secret provided; functionality may be limited')
+    return "DUMMY"
+}
+
 configurations {
     instrumentedClasspath {
         canBeConsumed = false
@@ -52,8 +63,8 @@ android {
 
     compileSdk = 35
 
-    lintOptions {
-        abortOnError false
+    lint {
+        abortOnError = false
     }
 
     signingConfigs {
@@ -79,6 +90,7 @@ android {
         versionName getVersionName()
         multiDexEnabled true //important
         resValue 'string', 'curseforge_api_key', getCFApiKey()
+        buildConfigField 'String', 'ELYBY_CLIENT_SECRET', '"' + getElyByClientSecret().replace("\\", "\\\\").replace("\"", "\\\"") + '"'
     }
 
     flavorDimensions  = ["runtime"]
