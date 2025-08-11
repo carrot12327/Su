@@ -1,0 +1,7 @@
+# Copy this file to local.properties and set your absolute SDK path
+# This file should NOT be committed
+
+sdk.dir=/absolute/path/to/android-sdk
+
+# On Windows, use double backslashes, e.g.:
+# sdk.dir=C:\\Android\\Sdk

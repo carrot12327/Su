@@ -42,6 +42,20 @@ You can get MojoLauncher via three methods:
 ```
 (Replace `./gradlew` with `.\gradlew.bat` if you are building on Windows).
 
+### Android SDK/NDK setup
+- Install Android commandline tools and accept licenses:
+  - `sdkmanager --licenses`
+  - `sdkmanager "platform-tools" "platforms;android-35" "build-tools;34.0.0" "ndk;25.2.9519653"`
+- Create `local.properties` in project root:
+  - `sdk.dir=/absolute/path/to/android-sdk`
+
+### Secrets
+- Ely.by OAuth client secret is read from environment or file:
+  - Env: `ELYBY_CLIENT_SECRET="..."`
+  - File: create `elyby_secret.txt` in project root containing the secret
+- Optional: CurseForge API key from env or `curseforge_key.txt`
+- Never commit secrets or keystores. See `local.properties.example` and `.gitignore`.
+
 ## Current roadmap
 - [x] Instance system in favor of profiles
 - [x] Out-of-the box 1.21.5 support
