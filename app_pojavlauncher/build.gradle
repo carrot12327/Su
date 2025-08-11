@@ -272,7 +272,7 @@ class AssetTaskRegistrar {
     }
 
     def jreRuntimeDependency(int version, String relPath) {
-        def jreUrl = "https://github.com/MojoLauncher/android-openjdk-build-multiarch/releases/download/rolling/jre%d-pojav.zip"
+        def jreUrl = "https://github.com/ZiayzuLauncher/android-openjdk-build-multiarch/releases/download/rolling/jre%d-pojav.zip"
         onlineZipDependency(String.format(jreUrl, version), "ComponentRuntime$version", relPath)
     }
 }
@@ -293,7 +293,7 @@ afterEvaluate {
             registrar.jreRuntimeDependency 21, "components/jre-21"
         }
         
-		def cacioJarUrl = "https://jitpack.io/com/github/MojoLauncher/%1\$s/%2\$s/master-SNAPSHOT/%2\$s-master-SNAPSHOT.jar"
+		def cacioJarUrl = "https://jitpack.io/com/github/ZiayzuLauncher/%1\$s/%2\$s/master-SNAPSHOT/%2\$s-master-SNAPSHOT.jar"
 
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-shared", "components/caciocavallo"
         registrar.onlineJarDependency cacioJarUrl, "caciocavallo", "cacio-androidnw", "components/caciocavallo"
