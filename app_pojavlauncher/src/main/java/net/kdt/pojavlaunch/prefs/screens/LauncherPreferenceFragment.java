@@ -25,6 +25,9 @@ public class LauncherPreferenceFragment extends PreferenceFragmentCompat impleme
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         view.setBackgroundColor(getResources().getColor(R.color.background_app));
         super.onViewCreated(view, savedInstanceState);
+        // Subtle fade-in to match home animations
+        view.setAlpha(0f);
+        view.animate().alpha(1f).setDuration(180).start();
     }
 
     @Override
