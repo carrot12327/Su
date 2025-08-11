@@ -48,7 +48,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.mojo'
+    namespace 'com.ziayzu.launcher'
 
     compileSdk = 35
 
@@ -72,7 +72,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mojo"
+        applicationId "com.ziayzu.launcher"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode getDateSeconds()
@@ -101,8 +101,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.mojo.debug'
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher.debug'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder.debug'
         }
         proguard {
             initWith debug
@@ -121,8 +121,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.mojo'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher'
         }
         gplay {
             initWith release
