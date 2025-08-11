@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ZiayzuLauncher" parent="Theme.Material3.DynamicColors.Dark">
+        <item name="colorPrimary">@color/minebutton_color</item>
+        <item name="colorSecondary">@color/minebutton_color</item>
+        <item name="colorTertiary">@color/minebutton_color</item>
+        <item name="android:statusBarColor">@color/background_status_bar</item>
+        <item name="android:navigationBarColor">@color/background_app</item>
+    </style>
+</resources>

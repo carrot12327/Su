@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">মোজোলঞ্চার (মাইনক্রাফট: জাভা এডিশন আ্যন্ডরয়েডের জন্য)</string>
-    <string name="app_short_name">মোজোলঞ্চার </string>
+    <string name="app_name">Ziayzu Launcher</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
 
     <!-- Action bar part -->
 
@@ -23,7 +23,7 @@
     <string name="alerttitle_installmod">একটি মোড ইনস্টলার নির্বাচন করুন</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">MojoLauncher অপ্রত্যাশিতভাবে ক্র্যাশ করেছে</string>
+    <string name="error_fatal">Ziayzu Launcher অপ্রত্যাশিতভাবে ক্র্যাশ করেছে</string>
     <string name="error_no_version">>কোন ভার্সন নেই!</string>
     <string name="error_show_more">আরো দেখুন</string>
     <string name="error_show_less">কম দেখান</string>
@@ -274,10 +274,10 @@
     <string name="preference_gyro_sample_rate_title">জাইরোস্কোপ স্যাম্পলিং রেট</string>
     <string name="preference_gyro_sample_rate_description">জাইরোস্কোপ কন্ট্রোলে পারফরম্যান্স সমস্যা হলে এটি বাড়ান।</string>
     <string name="microsoft_login_retry_later">অনেক অনুরোধ করা হয়েছে, অনুগ্রহ করে পরে চেষ্টা করুন।</string>
-    <string name="storage_required">MojoLauncher চালানোর জন্য এক্সটার্নাল স্টোরেজ সংযুক্ত করতে হবে। পুনরায় সংযুক্ত করে অ্যাপ রিস্টার্ট করুন।</string>
+    <string name="storage_required">Ziayzu Launcher চালানোর জন্য এক্সটার্নাল স্টোরেজ সংযুক্ত করতে হবে। পুনরায় সংযুক্ত করে অ্যাপ রিস্টার্ট করুন।</string>
     <string name="mcl_setting_title_buttonallcaps">বোতামের লেবেলে কেবল বড় হাতের অক্ষর ব্যবহার করুন</string>
     <string name="mcl_setting_subtitle_buttonallcaps">ছোট হাতের অক্ষর ব্যবহার করতে এটি বন্ধ করুন।</string>
-    <string name="create_instance">নতুন ইনস্ট্যান্স তৈরি করুন</string>
+    <string name="create_instance">Create</string>
     <string name="preference_shader_dump_title">শেডার ডাম্পিং চালু করুন</string>
     <string name="preference_shader_dump_description">লগ ফাইলে কনভার্ট করা শেডার সংরক্ষণ করুন।</string>
     <string name="percent_format">%d%%</string>
@@ -308,10 +308,10 @@
     <string name="fabric_dl_install">ইনস্টল করুন</string>
     <string name="fabric_dl_cant_read_meta">%s লোডার মেটাডেটা পড়তে ব্যর্থ। পরে আবার চেষ্টা করুন।</string>
     <string name="fabric_dl_cant_read_meta2">Fabric লোডার মেটাডেটা পড়তে ব্যর্থ। পরে আবার চেষ্টা করুন।</string>
-    <string name="modloader_dl_install_fabric_instance">Fabric ইনস্ট্যান্স তৈরি করুন</string>
-    <string name="modloader_dl_install_quilt_instance">Quilt ইনস্ট্যান্স তৈরি করুন</string>
-    <string name="modloader_dl_install_forge_instance">Forge ইনস্ট্যান্স তৈরি করুন</string>
-    <string name="create_instance_vanilla">ভ্যানিলা ইনস্ট্যান্স তৈরি করুন</string>
+    <string name="modloader_dl_install_fabric_instance">Fabric</string>
+    <string name="modloader_dl_install_quilt_instance">Quilt</string>
+    <string name="modloader_dl_install_forge_instance">Forge</string>
+    <string name="create_instance_vanilla">Vanilla</string>
     <string name="create_profile_vanilla_like_versions">ভ্যানিলা-সদৃশ ভার্সন</string>
     <string name="create_profile_modded_versions">মডেড ভার্সন</string>
     <string name="fabric_dl_loader_title">ভার্সন নির্বাচন করুন</string>
@@ -337,7 +337,7 @@
     <string name="modpack_install_notification_data_not_available">মড লোডার তথ্য ডাউনলোড ব্যর্থ</string>
     <string name="modpack_install_modloader_download_failed">মড লোডার ফাইল ডাউনলোড করতে ব্যর্থ</string>
     <string name="modpack_install_download_failed">মডপ্যাক ফাইল ডাউনলোড করতে ব্যর্থ</string>
-    <string name="modpack_install_instance_button">মডপ্যাক ইনস্ট্যান্স তৈরি করুন</string>
+    <string name="modpack_install_instance_button">Modpack</string>
     <string name="notif_error_occured">একটি ত্রুটি ঘটেছে</string>
     <string name="notif_error_occured_desc">বিস্তারিত দেখতে ক্লিক করুন</string>
     <string name="fabric_dl_only_stable">শুধু স্থিতিশীল ভার্সন দেখান</string>
@@ -363,7 +363,7 @@
     <string name="preference_category_miscellaneous">বিবিধ সেটিংস</string>
     <string name="preference_category_video">ভিডিও সেটিংস</string>
     <string name="notification_permission_dialog_title">অনুমতির অনুরোধ</string>
-    <string name="notification_permission_dialog_text">MojoLauncher-কে নোটিফিকেশন অনুমতি দিতে হবে যাতে অ্যাপ ছেড়ে গেলে গেম/মডপ্যাক ডাউনলোড বন্ধ না হয়। অনুমতি ছাড়া, Android ব্যাকগ্রাউন্ডে ডাউনলোড বন্ধ করে দিতে পারে।</string>
+    <string name="notification_permission_dialog_text">Ziayzu Launcher-কে নোটিফিকেশন অনুমতি দিতে হবে যাতে অ্যাপ ছেড়ে গেলে গেম/মডপ্যাক ডাউনলোড বন্ধ না হয়। অনুমতি ছাড়া, Android ব্যাকগ্রাউন্ডে ডাউনলোড বন্ধ করে দিতে পারে।</string>
     <string name="notification_permission_toast">আপনি পরে সেটিংস থেকে এটি পরিবর্তন করতে পারবেন</string>
     <string name="preference_ask_for_notification_title">নোটিফিকেশন অনুমোদন দিন</string>
     <string name="preference_ask_for_notification_description">গেম/মডপ্যাক ব্যাকগ্রাউন্ড ডাউনলোডের জন্য প্রয়োজনীয় নোটিফিকেশন অনুমতি পুনরায় অনুরোধ করতে ক্লিক করুন।</string>
@@ -426,7 +426,7 @@
     <string name="local_login_bad_username_title">অযোগ্য ইউজারনেম</string>
     <string name="local_login_bad_username_text">ইউজারনেম ৩-১৬ অক্ষরের মধ্যে হতে হবে এবং কেবল ল্যাটিন অক্ষর, সংখ্যা ও আন্ডারস্কোর থাকতে হবে।</string>
     <string name="quick_setting_title">দ্রুত সেটিংস</string>
-    <string name="create_bta_instance">"Better than Adventure!" ইনস্ট্যান্স তৈরি করুন</string>
+    <string name="create_bta_instance">Better than Adventure!</string>
     <string name="select_bta_version">"Better than Adventure!" ভার্সন নির্বাচন করুন</string>
     <string name="bta_installer_available_versions">সমর্থিত BTA ভার্সন</string>
     <string name="bta_installer_untested_versions">পরীক্ষা না করা BTA ভার্সন</string>
@@ -437,6 +437,6 @@
     <string name="oauth_web_complete">অথেনটিকেট হচ্ছে…</string>
     <string name="auth_select_microsoft">Microsoft অ্যাকাউন্ট</string>
     <string name="auth_select_elyby">Ely.by অ্যাকাউন্ট</string>
-    <string name="auth_select_local">লোকাল অ্যাকাউন্ট</string>
+    <string name="auth_select_local">Offline account</string>
     <string name="instance_dir_missing">ইনস্ট্যান্স অনুপস্থিত</string>
     </resources>

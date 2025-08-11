@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">pajaw launcher (Mc4Android)</string>
-    <string name="app_short_name">Punjabi launcher</string>
+    <string name="app_name">Ziayzu Launcher</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -279,7 +279,7 @@
     <string name="modpack_download_downloading_mods">Downloading mods (%.2f MB / %.2f MB)</string>
     <string name="modpack_download_downloading_mods_fc">Downloading mods (File %d out of %d)</string>
     <string name="modpack_download_applying_overrides">Applying overrides (%d/%d)</string>
-    <string name="modpack_install_notification_title">Mojo Modpack Installer really gud</string>
+    <string name="modpack_install_notification_title">Ziayzu Modpack Installer really gud</string>
     <string name="modpack_install_notification_success">Click here to finish modpack installation</string>
     <string name="modpack_install_notification_data_not_available">Failed to download mod loader information please stay like a sigma 😎😎</string>
     <string name="modpack_install_modloader_download_failed">Failed to download the mod loader files</string>

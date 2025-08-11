@@ -5,14 +5,16 @@ import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.animation.AnimatorInflater;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 import net.kdt.pojavlaunch.LauncherActivity;
-import git.artdeell.mojo.R;
+import com.ziayzu.launcher.R;
 import net.kdt.pojavlaunch.prefs.LauncherPreferences;
 
 /**
@@ -25,6 +27,23 @@ public class LauncherPreferenceFragment extends PreferenceFragmentCompat impleme
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         view.setBackgroundColor(getResources().getColor(R.color.background_app));
         super.onViewCreated(view, savedInstanceState);
+        // Subtle fade-in to match home animations
+        view.setAlpha(0f);
+        view.animate().alpha(1f).setDuration(180).start();
+
+        // Apply press elevation to each preference row
+        RecyclerView list = getListView();
+        if (list != null) {
+            final android.animation.StateListAnimator sla = AnimatorInflater.loadStateListAnimator(requireContext(), R.animator.press_elevation);
+            for (int i = 0; i < list.getChildCount(); i++) {
+                View child = list.getChildAt(i);
+                if (child != null) child.setStateListAnimator(sla);
+            }
+            list.addOnChildAttachStateChangeListener(new RecyclerView.OnChildAttachStateChangeListener() {
+                @Override public void onChildViewAttachedToWindow(@NonNull View v) { v.setStateListAnimator(sla); }
+                @Override public void onChildViewDetachedFromWindow(@NonNull View v) { /* no-op */ }
+            });
+        }
     }
 
     @Override

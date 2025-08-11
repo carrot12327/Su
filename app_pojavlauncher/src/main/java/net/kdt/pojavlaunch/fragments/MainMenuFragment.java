@@ -17,7 +17,7 @@ import androidx.fragment.app.Fragment;
 import com.kdt.mcgui.mcVersionSpinner;
 
 import net.kdt.pojavlaunch.CustomControlsActivity;
-import git.artdeell.mojo.R;
+import com.ziayzu.launcher.R;
 import net.kdt.pojavlaunch.Tools;
 import net.kdt.pojavlaunch.extra.ExtraConstants;
 import net.kdt.pojavlaunch.extra.ExtraCore;
@@ -37,8 +37,8 @@ public class MainMenuFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Button mNewsButton = view.findViewById(R.id.news_button);
-        Button mDiscordButton = view.findViewById(R.id.discord_button);
+        View mNewsButton = view.findViewById(R.id.icon_wiki);
+        View mDiscordButton = view.findViewById(R.id.icon_discord);
         Button mCustomControlButton = view.findViewById(R.id.custom_control_button);
         Button mInstallJarButton = view.findViewById(R.id.install_jar_button);
         Button mShareLogsButton = view.findViewById(R.id.share_logs_button);
@@ -64,6 +64,20 @@ public class MainMenuFragment extends Fragment {
 
         mOpenDirectoryButton.setOnClickListener((v)-> openPath(v.getContext(), getCurrentProfileDirectory(), false));
 
+        // Staggered entrance animations
+        View header = view.findViewById(R.id.brand_row);
+        View[] items = new View[] {
+                header,
+                mCustomControlButton, mInstallJarButton, mShareLogsButton, mOpenDirectoryButton
+        };
+        for (int i = 0; i < items.length; i++) {
+            View item = items[i];
+            if (item == null) continue;
+            item.setAlpha(0f);
+            item.setTranslationY(getResources().getDisplayMetrics().density * 16);
+            int delay = 60 * i;
+            item.animate().alpha(1f).translationY(0f).setStartDelay(delay).setDuration(220).start();
+        }
 
         mNewsButton.setOnLongClickListener((v)->{
             Tools.swapFragment(requireActivity(), GamepadMapperFragment.class, GamepadMapperFragment.TAG, null);

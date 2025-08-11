@@ -48,7 +48,7 @@ configurations {
 }
 
 android {
-    namespace 'git.artdeell.mojo'
+    namespace 'com.ziayzu.launcher'
 
     compileSdk = 35
 
@@ -72,11 +72,11 @@ android {
     }
 
     defaultConfig {
-        applicationId "git.artdeell.mojo"
+        applicationId "com.ziayzu.launcher"
         minSdkVersion 21
         targetSdkVersion 35
         versionCode getDateSeconds()
-        versionName getVersionName()
+        versionName "1.0.0"
         multiDexEnabled true //important
         resValue 'string', 'curseforge_api_key', getCFApiKey()
     }
@@ -101,8 +101,8 @@ android {
             shrinkResources false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.customDebug
-            resValue 'string', 'application_package', 'git.artdeell.mojo.debug'
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder.debug'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher.debug'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder.debug'
         }
         proguard {
             initWith debug
@@ -121,8 +121,8 @@ android {
             // defaultConfig already set
             // multiDexEnabled = true
             // debuggable = true
-            resValue 'string', 'storageProviderAuthorities', 'git.artdeell.mojo.scoped.gamefolder'
-            resValue 'string', 'application_package', 'git.artdeell.mojo'
+            resValue 'string', 'storageProviderAuthorities', 'com.ziayzu.launcher.scoped.gamefolder'
+            resValue 'string', 'application_package', 'com.ziayzu.launcher'
         }
         gplay {
             initWith release
@@ -215,6 +215,7 @@ class AssetTaskRegistrar {
             src downloadUrl
             dest downloadTarget
             overwrite false
+            retries 4
         }
 
         def unzipTask = project.tasks.register("unzip${dependencySuffix}", Copy) {
@@ -263,6 +264,7 @@ class AssetTaskRegistrar {
             src String.format(jarUrl, jarProject, dependency)
             dest targetDir
             overwrite false
+            retries 4
             doLast {
                 if(!it.didWork) return
                 writeVersion targetDir
@@ -306,6 +308,7 @@ afterEvaluate {
 dependencies {
     implementation 'javax.annotation:javax.annotation-api:1.3.2'
     implementation 'commons-codec:commons-codec:1.15'
+    implementation 'com.google.android.material:material:1.12.0'
     // implementation 'com.wu-man:android-bsf-api:3.1.3'
     implementation 'androidx.preference:preference:1.2.0'
     //implementation 'androidx.core:core:1.7.0'

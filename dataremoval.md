@@ -1,5 +1,5 @@
-# Remove MojoLauncher account data
-MojoLauncher uses two types of accounts:
+# Remove Ziayzu Launcher account data
+Ziayzu Launcher uses two types of accounts:
 - Local accounts
 - Microsoft accounts
 <br>

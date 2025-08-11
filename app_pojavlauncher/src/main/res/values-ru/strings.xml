@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_name">MojoLauncher (Minecraft: Java Edition для Android)</string>
-    <string name="app_short_name">MojoLauncher</string>
+    <string name="app_name">Ziayzu Launcher</string>
+    <string name="app_short_name">Ziayzu Launcher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -15,7 +15,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Выберите установщик мода</string>
     <!-- Error messages -->
-    <string name="error_fatal">MojoLauncher был остановлен в результате сбоя</string>
+    <string name="error_fatal">Ziayzu Launcher был остановлен в результате сбоя</string>
     <string name="error_no_version">Нет версий!</string>
     <string name="error_show_more">Развернуть</string>
     <string name="error_show_less">Свернуть</string>
@@ -241,11 +241,11 @@
     <string name="preference_gyro_sample_rate_title">Интервал опроса гироскопа</string>
     <string name="preference_gyro_sample_rate_description">Увеличьте, если управление наклоном снижает производительность.</string>
     <string name="microsoft_login_retry_later">Слишком много запросов, попробуйте ещё раз позже.</string>
-    <string name="storage_required">MojoLauncher требует подключения к внешнему хранилищу. Переподключите его и перезапустите приложение.</string>
+    <string name="storage_required">Ziayzu Launcher требует подключения к внешнему хранилищу. Переподключите его и перезапустите приложение.</string>
     <string name="mcl_setting_title_buttonallcaps">Заглавные буквы на кнопках</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Отключите, если хотите использовать строчные буквы в своей раскладке управления.</string>
     <string name="create_profile">Новый профиль</string>
-    <string name="create_instance">Создать новую установку</string>
+    <string name="create_instance">Create</string>
     <string name="preference_shader_dump_title">Сохранять дамп шейдеров</string>
     <string name="preference_shader_dump_description">Записывать в файл журнала данные о конвертации шейдеров.</string>
     <string name="percent_format">%d %%</string>
@@ -275,7 +275,7 @@
     <string name="fabric_dl_game_version">Версия игры</string>
     <string name="fabric_dl_install">Установить</string>
     <string name="fabric_dl_cant_read_meta">Не удалось прочитать метаданные %s. Повторите попытку позже.</string>
-    <string name="create_instance_vanilla">Немодифицированная версия</string>
+    <string name="create_instance_vanilla">Vanilla</string>
     <string name="create_profile_vanilla_like_versions">Стандартные версии</string>
     <string name="create_profile_modded_versions">Загрузчики модов</string>
     <string name="fabric_dl_loader_title">Выбор версий</string>
@@ -296,12 +296,12 @@
     <string name="modpack_download_downloading_mods">Загрузка модов (%.2f МБ / %.2f МБ)</string>
     <string name="modpack_download_downloading_mods_fc">Загрузка модов (файл %d из %d)</string>
     <string name="modpack_download_applying_overrides">Перезапись параметров (%d/%d)</string>
-    <string name="modpack_install_notification_title">Установка сборки MojoLauncher</string>
+    <string name="modpack_install_notification_title">Установка сборки Ziayzu Launcher</string>
     <string name="modpack_install_notification_success">Нажмите для завершения установки сборки</string>
     <string name="modpack_install_notification_data_not_available">Не удалось загрузить информацию о загрузчике модов</string>
     <string name="modpack_install_modloader_download_failed">Не удалось загрузить файлы загрузчика модов</string>
     <string name="modpack_install_download_failed">Не удалось загрузить файлы сборки</string>
-    <string name="modpack_install_instance_button">Установка со сборкой модов</string>
+    <string name="modpack_install_instance_button">Modpack</string>
     <string name="notif_error_occured">Возникла ошибка</string>
     <string name="notif_error_occured_desc">Нажмите для получения дополнительных сведений</string>
     <string name="fabric_dl_only_stable">Только стабильные версии</string>
@@ -326,7 +326,7 @@
     <string name="preference_category_miscellaneous">Другие настройки</string>
     <string name="preference_category_video">Настойки графики</string>
     <string name="notification_permission_dialog_title">Запрос разрешения</string>
-    <string name="notification_permission_dialog_text">Лаунчеру требуется разрешение на отправку уведомлений, чтобы предотвратить остановку игры/загрузки её данных при сворачивании приложения. Без этого разрешения Android может принудительно завершить работу MojoLauncher при переходе в фоновый режим.</string>
+    <string name="notification_permission_dialog_text">Лаунчеру требуется разрешение на отправку уведомлений, чтобы предотвратить остановку игры/загрузки её данных при сворачивании приложения. Без этого разрешения Android может принудительно завершить работу Ziayzu Launcher при переходе в фоновый режим.</string>
     <string name="notification_permission_toast">Выбор можно изменить позже, перейдя в настройки.</string>
     <string name="preference_ask_for_notification_title">Разрешить уведомления</string>
     <string name="preference_ask_for_notification_description">Нажмите, чтобы ещё раз запросить разрешение на вывод уведомлений. Они нужны для правильной загрузки игры и сборок модов в фоне.</string>
@@ -384,15 +384,15 @@
     <string name="local_login_bad_username_title">Неподходящее имя пользователя</string>
     <string name="local_login_bad_username_text">Имя пользователя должно быть от 3 до 16 символов в длину и содержать только латинские символы, цифры 0–9 или нижние подчёркивания.</string>
     <string name="quick_setting_title">Быстрые настройки</string>
-    <string name="create_bta_instance">Создать установку \"Better than Adventure!\"</string>
+    <string name="create_bta_instance">Better than Adventure!</string>
     <string name="select_bta_version">Выбрать версию \"Better than Adventure!\"</string>
     <string name="bta_installer_available_versions">Поддерживаемые версии BTA</string>
     <string name="bta_installer_untested_versions">Нетестированные версии BTA</string>
     <string name="bta_installer_nightly_versions">Экспериментальные версии BTA</string>
     <string name="newdl_extracting_native_libraries">Распаковка дополнительных библиотек... (%d/%d)</string>
     <string name="fabric_dl_cant_read_meta2">Ошибка чтения метаданных Fabric</string>
-    <string name="modloader_dl_install_fabric_instance">Установка с Fabric</string>
-    <string name="modloader_dl_install_quilt_instance">Установка с Quilt</string>
-    <string name="modloader_dl_install_forge_instance">Установка с Forge</string>
+    <string name="modloader_dl_install_fabric_instance">Fabric</string>
+    <string name="modloader_dl_install_quilt_instance">Quilt</string>
+    <string name="modloader_dl_install_forge_instance">Forge</string>
     <string name="discord_invite" translatable="false">https://discord.gg/CuuqPbbnUY</string>
 </resources>
