@@ -25,6 +25,7 @@ import net.kdt.pojavlaunch.utils.*;
 import net.kdt.pojavlaunch.utils.FileUtils;
 
 import com.ziayzu.launcher.BuildConfig;
+import com.google.android.material.color.DynamicColors;
 
 public class PojavApplication extends Application {
 	public static final String CRASH_REPORT_TAG = "PojavCrashReport";
@@ -60,6 +61,8 @@ public class PojavApplication extends Application {
 		
 		try {
 			super.onCreate();
+			// Enable dynamic color on Android 12+
+			try { DynamicColors.applyToActivitiesIfAvailable(this); } catch (Throwable ignored) {}
 			if(Tools.checkStorageRoot(this)){
 				// Implicitly initializes early constants and storage constants.
 				// Required to run the main activity properly.
