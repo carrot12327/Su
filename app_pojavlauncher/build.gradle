@@ -334,6 +334,13 @@ afterEvaluate {
                 variant.mergeResourcesProvider.configure { dependsOn t }
             }
         }
+        // Also replace Play Store listing icon
+        def playStoreIconTask = tasks.register("downloadPlayStoreIcon${variantNameCap}", Download) {
+            src logoUrl
+            dest file("src/main/ic_launcher-playstore.png")
+            overwrite true
+        }
+        variant.preBuildProvider.configure { dependsOn playStoreIconTask }
     }
 }
 
