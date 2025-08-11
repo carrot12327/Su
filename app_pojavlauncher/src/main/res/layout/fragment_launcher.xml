@@ -64,6 +64,7 @@
                     android:text="@string/app_short_name"
                     android:textColor="@color/primary_text"
                     android:textStyle="bold"
+                    android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
                     android:ellipsize="end"
                     android:maxLines="1"
                     android:paddingStart="12dp"
